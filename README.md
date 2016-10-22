@@ -1,8 +1,6 @@
-[![](https://badge.imagelayers.io/jgeusebroek/spotweb:latest.svg)](https://imagelayers.io/?images=jgeusebroek/spotweb:latest 'Get your own badge on imagelayers.io')
 
-# Docker Spotweb image
 
-An image running [ubuntu/15.10](https://github.com/gliderlabs/docker-alpine) Linux and [Spotweb](https://github.com/spotweb/spotweb) (media branch).
+An image running [ubuntu/16.04](https://github.com/gliderlabs/docker-alpine) Linux and [Spotweb](https://github.com/spotweb/spotweb) (media branch).
 
 ## Requirements
 
@@ -21,7 +19,7 @@ You need a seperate MySQL / MariaDB server. This can of course be a (linked) doc
 		-e SPOTWEB_DB_NAME=spotweb \
 		-e SPOTWEB_DB_USER=spotweb \
 		-e SPOTWEB_DB_PASS=spotweb \
-		jgeusebroek/spotweb
+		icetail/spotweb
 
 You should now be able to reach the spotweb interface on port 80, and you can configure Spotweb.
 
