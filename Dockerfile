@@ -1,9 +1,9 @@
-FROM ubuntu:15.10
-MAINTAINER Jeroen Geusebroek <me@jeroengeusebroek.nl>
+FROM ubuntu:16.04
+MAINTAINER Icetail
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     TERM="xterm" \
-    APTLIST="apache2 php5 php5-curl php5-gd php5-gmp php5-mysql git-core" \
+    APTLIST="apache2 php php-curl php-gd php-gmp php-mysql git-core" \
     REFRESHED_AT='2015-02-17'
 
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
